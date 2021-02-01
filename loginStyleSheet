@@ -45,8 +45,10 @@ body{
     height: auto;
 }
 h2{
+    position: absolute;
     text-align: center;
-    margin: 20% auto auto auto;
+    top: 20%;
+    left: 60%;
     font-size: 3rem;
 }
 .container{
@@ -85,4 +87,24 @@ button:focus {outline:0;}
 .sign-up-button:hover{
     background-color: #8bb3c1;
     color: whitesmoke;
+}
+.input-position{
+    margin: auto;
+    width: 50%;
+}
+input{
+    width: 100%;
+    background: transparent;
+    outline:none;
+    border: 0;
+    border-bottom: 2px solid gray;
+}
+input:focus ~ .hide{
+    color: darkorange;
+    position: absolute;
+    margin-top: -30px;
+    
+}
+.hide{
+    color: transparent;
 }
