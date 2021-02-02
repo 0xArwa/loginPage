@@ -25,8 +25,13 @@
 <div class="content">
     <h2 class="login-heading">Sign in</h2>
     <div class="input-position">
-        <input type="email" id="login-email" placeholder="email" name="email">
+        <form>
+        <input type="email" id="login-email" placeholder="email" name="email" inputmode="email" required>
         <label for="login-email" class="hide">Email</label>
+        <input type="password" id="password" placeholder="password" name="pass-word" inputmode="text" required>
+        <label for="password" class="hide2">Password</label>
+            <button type="submit" class="sign-in-button">SIGN IN</button>
+        </form>
     </div>
 
 </div>
