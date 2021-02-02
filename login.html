@@ -6,6 +6,8 @@
     <title>login page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="login_styleSheet.css">
+    <script src="modifyContent.js"></script>
+    <style id="hide-elements"></style>
 </head>
 <body>
 <div class="login-box">
@@ -17,12 +19,12 @@
     <h3>Welcome to website</h3>
     <p style="margin-top: 30px;">New here?</p>
             <!--sign up button here-->
-            <button type="button" class="sign-up-button">SIGN UP</button>
+            <button type="button" class="sign-up-button" onclick="displaySignUp()">SIGN UP</button>
         </div>
 
     </div>
 </div>
-<div class="content">
+<div class="content" id="content">
     <h2 class="login-heading">Sign in</h2>
     <div class="input-position">
         <form>
