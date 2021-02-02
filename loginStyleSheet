@@ -48,7 +48,7 @@ h2{
     position: absolute;
     text-align: center;
     top: 20%;
-    left: 60%;
+    left: 58%;
     font-size: 3rem;
 }
 .container{
@@ -90,7 +90,8 @@ button:focus {outline:0;}
 }
 .input-position{
     margin: auto;
-    width: 50%;
+    width: 60%;
+    position: relative;
 }
 input{
     width: 100%;
@@ -98,13 +99,56 @@ input{
     outline:none;
     border: 0;
     border-bottom: 2px solid gray;
-}
-input:focus ~ .hide{
-    color: darkorange;
-    position: absolute;
-    margin-top: -30px;
-    
+    line-height: 1.5em;
+    font-size: 1rem;
+    margin-top: 0;
+    cursor: text;
 }
 .hide{
+    position: absolute;
+    display: block;
     color: transparent;
+    top: 0;
+}
+#login-email:focus ~ .hide{
+    color: #8bb3c1;
+    position:absolute;
+    top: -1.5vw;
+    display: block;
+    transition: 0.5s;
+}
+input:focus::placeholder {
+    color: transparent;
+}
+#password{
+    margin-top: 4vw;
+}
+.hide2{
+    position: absolute;
+    display: block;
+    color: transparent;
+    buttom: 0;
+}
+#password:focus ~ .hide2{
+    color: #9bc3d0;
+    position:absolute;
+    top: 4.5vw;
+    display: block;
+    transition: 0.5s;
+}
+.sign-in-button{
+    width: 12vw;
+    height: 4vw;
+    border-radius: 2em;
+    border: none;
+    background: linear-gradient(90deg, rgba(100,155,219,1) 0%, rgba(224,161,209,1) 100%);
+    color: white;
+    font-size: 1rem;
+    position: absolute;
+    top: 150%;
+    right: 25%;
+}
+.sign-in-button:hover{
+    color: whitesmoke;
+    background: linear-gradient(90deg, rgba(149,188,213,1) 0%, rgba(222,172,210,1) 100%);
 }
