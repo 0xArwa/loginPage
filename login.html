@@ -1,36 +1,38 @@
 <!DOCTYPE html>
-<!-- DigitalVillian  -->
+<!-- digitalVillian -->
 <html lang="en ar">
+
 <head>
     <meta charset="UTF-8">
     <title>login page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="login_styleSheet.css">
     <script src="modifyContent.js"></script>
-    <style id="hide-elements"></style>
 </head>
+
 <body>
 <div class="login-box">
+    <!-- left side for the image and sign up button -->
 <div class="login-img">
     <div class="container">
     <img src="https://i.ibb.co/h7zXsTC/pawel-czerwinski-8u-ZPyn-Iu-r-Q-unsplash.jpg"
          border="0" class="img-border">
         <div class="align-content">
-    <h3>Welcome to website</h3>
-    <p style="margin-top: 30px;">New here?</p>
+    <h3 id="heading-modify">Welcome to website</h3>
+    <p style="margin-top: 30px;" id="modify2">New here?</p>
             <!--sign up button here-->
-            <button type="button" class="sign-up-button" onclick="displaySignUp()">SIGN UP</button>
+            <button type="button" id="sign-up" class="sign-up-button" onclick="displaySignUp()">SIGN UP</button>
         </div>
-
     </div>
 </div>
 <div class="content" id="content">
     <h2 class="login-heading">Sign in</h2>
     <div class="input-position">
+        <!-- sign in form -->
         <form>
         <input type="email" id="login-email" placeholder="email" name="email" inputmode="email" required>
         <label for="login-email" class="hide">Email</label>
-        <input type="password" id="password" placeholder="password" name="pass-word" inputmode="text" required>
+        <input type="password" id="password" placeholder="password" name="password" inputmode="text" required>
         <label for="password" class="hide2">Password</label>
             <button type="submit" class="sign-in-button">SIGN IN</button>
         </form>
@@ -38,5 +40,6 @@
 
 </div>
 </div>
+
 </body>
 </html>
