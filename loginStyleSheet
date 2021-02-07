@@ -130,7 +130,7 @@ input:focus::placeholder {
     buttom: 0;
 }
 #password:focus ~ .hide2{
-    color: #9bc3d0;
+    color: #8bb3c1;
     position:absolute;
     top: 4.5vw;
     display: block;
