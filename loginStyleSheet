@@ -33,7 +33,7 @@ body{
 }
 .content{
     display: inline-flex;
-    float: left;
+    float: right;
     width: 60%;
     height: auto;
 
@@ -151,4 +151,44 @@ input:focus::placeholder {
 .sign-in-button:hover{
     color: whitesmoke;
     background: linear-gradient(90deg, rgba(149,188,213,1) 0%, rgba(222,172,210,1) 100%);
+}
+
+.hidden-form{
+    display: none;
+    float: right;
+    width: 60%;
+    height: auto;
+}
+
+.form2-style{
+    margin-top: 2.4vw;
+}
+
+#name:focus ~ .hide{
+    color: #8bb3c1;
+    position:absolute;
+    top: 1.5vw;
+    display: block;
+    transition: 0.5s;
+}
+
+.hide3{
+    position: absolute;
+    display: block;
+    color: transparent;
+    buttom: 0;
+}
+#login-email-org:focus ~.hide2{
+    color: #8bb3c1;
+    position:absolute;
+    top: 5.5vw;
+    display: block;
+    transition: 0.5s;
+}
+#password-org:focus ~.hide3{
+    color: #8bb3c1;
+    position:absolute;
+    top: 9.5vw;
+    display: block;
+    transition: 0.5s;
 }
