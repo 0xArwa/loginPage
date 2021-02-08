@@ -36,7 +36,6 @@ body{
     float: right;
     width: 60%;
     height: auto;
-
 }
 .login-img{
     display: inline-flex;
@@ -159,7 +158,6 @@ input:focus::placeholder {
     width: 60%;
     height: auto;
 }
-
 .form2-style{
     margin-top: 2.4vw;
 }
@@ -171,7 +169,6 @@ input:focus::placeholder {
     display: block;
     transition: 0.5s;
 }
-
 .hide3{
     position: absolute;
     display: block;
